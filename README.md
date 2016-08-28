@@ -24,3 +24,7 @@ npm run copy & webpack --env=dist
 4 - Rodar um servidor local com a aplicação compilada:
 
 gulp watch
+
+##OBS:
+
+Se houver a pasta dist, basta rodar gulp watch

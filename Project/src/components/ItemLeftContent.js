@@ -6,14 +6,13 @@ var _ = require('lodash');
 function getNextItemAndUpdate(me , name){
    var url = 'https://api.github.com/repos/globocom/',     
         reponame =  name,
-        urlCommit = url + reponame + '/commits',
-        token = 'b5b5a3c3120c348b7b8b832a8136d12b7d33ee98'; 
+        urlCommit = url + reponame + '/commits'; 
             
       
       
     //commits  
     $.ajax({
-      url: urlCommit + '?state=closed&access_token=' + token,
+      url: urlCommit,
       dataType: 'json',
       cache: false,
       success: function(data) {

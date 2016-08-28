@@ -12,12 +12,10 @@ class MainContent extends React.Component{
       this.state = {data: []};
       this.props.data = [];
       var me = this;
-      var token = 'b5b5a3c3120c348b7b8b832a8136d12b7d33ee98';
       
-      console.log('https://api.github.com/users/globocom/repos?state=closed&access_token=' + token);
       
     $.ajax({
-      url: 'https://api.github.com/users/globocom/repos?state=closed&access_token=' + token,
+      url: 'https://api.github.com/users/globocom/repos',
       dataType: 'json',
       cache: false,
       success: function(data) {
